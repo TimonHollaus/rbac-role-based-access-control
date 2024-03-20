@@ -29,4 +29,10 @@ public class Resource {
             intersection.retainAll(this.roleSet);
             return !intersection.isEmpty();
       }
+
+      public boolean hasAccesKum(User user){
+            HashSet<Role> intersection = new HashSet<>(user.userRoles());
+            intersection.retainAll(this.roleSet);
+            return roleSet.size() >= intersection.size();
+      }
 }

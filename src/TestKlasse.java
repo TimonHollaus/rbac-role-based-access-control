@@ -14,8 +14,10 @@ public class TestKlasse {
 
             user1.addRole(Kunde);
             kaufen.addRole(Kunde);
+            kaufen.addRole(Manager);
             System.out.println(user1.listRoles());
 
             System.out.println(kaufen.hasAccess(user1));
+            System.out.println(kaufen.hasAccesKum(user1));
       }
 }
