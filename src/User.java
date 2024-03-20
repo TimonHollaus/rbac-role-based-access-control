@@ -4,6 +4,10 @@ import java.util.Iterator;
 public class User {
 
       private HashSet <Role> roleSet;
+
+      public User(){
+            roleSet = new HashSet<>();
+      }
       public void addRole(Role role){
             roleSet.add(role);
       }
