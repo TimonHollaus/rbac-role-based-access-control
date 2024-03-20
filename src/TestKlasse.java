@@ -17,7 +17,5 @@ public class TestKlasse {
             System.out.println(user1.listRoles());
 
             System.out.println(kaufen.hasAccess(user1));
-
-
       }
 }

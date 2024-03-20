@@ -25,6 +25,8 @@ public class Resource {
       }
 
       public boolean hasAccess(User user){
-            return user.listRoles().contains(this.listRoles());
+            HashSet<Role> intersection = new HashSet<>(user.userRoles());
+            intersection.retainAll(this.roleSet);
+            return !intersection.isEmpty();
       }
 }

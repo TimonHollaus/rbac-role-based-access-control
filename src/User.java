@@ -24,5 +24,8 @@ public class User {
             }
             return ergebnis;
       }
+      public HashSet<Role> userRoles(){
+            return this.roleSet;
+      }
 
 }
